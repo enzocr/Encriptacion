@@ -38,7 +38,6 @@ public class Main {
 
 		System.out.println("Seleccione accion a realizar");
 		opcion = Integer.parseInt(in.readLine());
-		
 
 		return opcion;
 	}
@@ -68,11 +67,10 @@ public class Main {
 
 	private static void menu(String type) throws Exception {
 		int option;
-		System.out.println("   "+type);
-		System.out.println("1.Create key");
-		System.out.println("2.Encript Message");
-		System.out.println("3.Decrypt Message");
-		System.out.println("4.Exit ");
+		System.out.println("1.Create" + type + " key");
+		System.out.println("2.Encript" + type + "Message");
+		System.out.println("3.Decrypt" + type + " Message");
+		System.out.println("4.Exit " + type);
 		option = Integer.parseInt(in.readLine());
 
 		switch (option) {
